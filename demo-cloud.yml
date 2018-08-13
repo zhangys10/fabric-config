@@ -1,0 +1,186 @@
+management:
+  context-path: /demo
+spring:  
+  cloud:
+    config:
+      uri: http://10.56.193.133:9081/config/
+      
+#    stream:
+#      kafka:
+#        binder:
+#          brokers:
+#            #- 10.56.193.247
+#            - localhost
+#          zk-nodes:
+#            #- 10.56.193.247
+#            - localhost 
+#      bindings:
+#        locationIn:
+#          destination: g2.location.data
+#          group: g2-location
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        locationOut:
+#          destination: g2.location.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        activityAuditIn:
+#          destination: g2.activity.data
+#          group: g2-audit
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        activityAuditOut:
+#          destination: g2.activity.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        activitySessionIn:
+#          destination: g2.activitySession.data
+#          group: g2-audit
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        activitySessionOut:
+#          destination: g2.activitySession.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        changeHistoryIn:
+#          destination: g2.changehistory.data
+#          group: g2-audit
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        changeHistoryOut:
+#          destination: g2.changehistory.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        amountChangeIn:
+#          destination: g2.amountchange.data
+#          group: g2-audit
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        amountChangeOut:
+#          destination: g2.amountchange.data          
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        inventoryIn:
+#          destination: g2.inventory.data
+#          group: g2-inventory
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        inventoryOut:
+#          destination: g2.inventory.data          
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json 
+#        patronCountIn:
+#          destination: g2.patroncount.data
+#          group: g2-activity
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        patronCountOut:
+#          destination: g2.patroncount.data          
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json 
+#        activityAuditinvIn:
+#          destination: g2.activityauditinv.data
+#          group: g2-audit
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        activityAuditinvOut:
+#          destination: g2.activityauditinv.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        deviceRequestIn:
+#          destination: g2.deviceevent.data
+#          group: g2-activity
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        deviceRequestOut:
+#          destination: g2.deviceevent.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        systemRequestOut:
+#          destination: g2.systemevent.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        applicationRequestOut:
+#          destination: g2.applicationevent.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        applicationRequestIn:
+#          destination: g2.applicationevent.data
+#          group: g2-syco-sync-engine
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json  
+#        deviceErrorRequestIn:
+#          destination: g2.deviceerrorevent.data
+#          group: g2-event
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        deviceErrorRequestOut:
+#          destination: g2.deviceerrorevent.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        cardResultRequestIn:
+#          destination: g2.sycocardresult.data
+#          group: g2-syco-sync-engine
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        cardResultRequestOut:
+#          destination: g2.sycocardresult.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        employeeSessionIn:
+#          destination: g2.employeesession.data
+#          group: g2-activity
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#        employeeSessionOut:
+#          destination: g2.employeesession.data
+#          content-type: application/x-java-serialized-object;type=com.mce.gems.event.entity.TableGamesEvent
+#          #content-type: application/json
+#  data:
+#    mongodb:      
+#      uri: mongodb://localhost:27017/g2dev
+#      #uri: mongodb://10.56.224.160:27018/g2dmz
+#      
+#
+#  zipkin:
+#    enabled: false
+#    compression:
+#      enabled: true
+#    base-url: http://10.56.193.119:18030/
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
+#
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#    lease-renewal-interval-in-seconds: 30 
+#    lease-expiration-duration-in-seconds: 60    
+#    status-page-url-path: ${server.context-path}/info    
+#    health-check-url-path: ${server.context-path}/health
+#  client:
+#    enabled: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka   
+#
+#security:
+#  oauth2:
+#    client:
+#      client-id: mce-gems-secured
+#      client-secret: passw0rd
+#      access-token-uri: http://internal-g2-dev-ge-ecselast-xeqdpam50346-1397164183.ap-southeast-1.elb.amazonaws.com/oauth/token
+#      user-authorization-uri: http://internal-g2-dev-ge-ecselast-xeqdpam50346-1397164183.ap-southeast-1.elb.amazonaws.com/oauth/authorize
+#      registered-redirect-uri: http://localhost:9090/client/home.html      
+#      scope: write
+#      auto-approve-scopes: read,write
+#    resource:
+#      user-info-uri: http://internal-g2-dev-ge-ecselast-xeqdpam50346-1397164183.ap-southeast-1.elb.amazonaws.com/user
+#
+#mre:
+#  g2:
+#    region: 
+#      name: MCA
+#      timeZone: Asia/Macau
+#session:
+#   inactivetimeout: 30
