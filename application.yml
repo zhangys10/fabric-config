@@ -3,7 +3,7 @@ management:
 spring:  
   cloud:
     config:
-      uri: http://10.56.193.133:18020/config/
+      uri: http://10.56.193.133:9081/config/
       
 #    stream:
 #      kafka:
